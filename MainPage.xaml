@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SumaAppMvvm.MainPage">
+
+
+    <StackLayout Padding="20" Spacing="10">
+        <Label Text="Ingrese el primer valor:"/>
+        <Entry x:Name="Sumar1" Placeholder="Ejemplo: 10" Text="{Binding Sumar1}"/>
+
+        <Label Text="Ingrese el segundo valor:"/>
+        <Entry x:Name="Sumar2" Placeholder="Ejemplo: 20" Text="{Binding Sumar2}"/>
+
+        <Label Text="{Binding Resultado}"/>
+
+        <Button Text="Sumar" Clicked="Sumar_Clicked" FontSize="22"/>
+        <Button Text="Limpiar" Clicked="Limpiar_Clicked" FontSize="22"/>
+    </StackLayout>
+
+</ContentPage>  
+    
+
